@@ -34,109 +34,7 @@ const HomeBottomNavigation: React.FC<BottomTabNavigatorProps> = ({
   navigation,
   route,
 }) => {
-  //   <NavigationContainer>
-  //     <Tab.Navigator
-  //       initialRouteName="Home"
-  //       screenOptions={({route})=>({
-  //           tabBarActiveTintColor: '#0122AE',
-  //           tabBarInactiveTintColor: '#828282',
-  //       })}>
-  //       <Tab.Screen
-  //         name="Homestack"
-  //         component={HomeStack}
-
-  //         options={{
-  //           headerShown:false,
-  //           tabBarLabel: 'Home',
-  //           tabBarIcon: ({ color, size }) => (
-  //             // <MaterialCommunityIcons
-  //             //   name="home"
-  //             //   color={color}
-  //             //   size={size}
-  //             // />
-  //             <HomeSvg/>
-  //           ),
-  //         }}  />
-  //       <Tab.Screen
-  //         name="History"
-  //         component={History}
-  //         options={{
-  //           // tabBarLabel: 'History',
-  //           tabBarIcon: ({ color, size }) => (
-  //             // <MaterialCommunityIcons
-  //             //   name="history"
-  //             //   color={color}
-  //             //   size={size}
-  //             // />
-  //             <TransactionSvg/>
-  //           ),
-  //           headerTitle:"History",
-  //           headerRight: ()=> (
-  //             <View style={{marginLeft: 10}}>
-  //               <FontAwesome name='bell-o' color={'#DADADA'} size={22}/>
-
-  //             </View>
-  //           ),
-  //           headerLeft: ()=> (
-  //             <View style={{marginRight: 10}}>
-  //               <Ionicons name='arrow-back' color={'#6E7191'} size={22}/>
-
-  //             </View>
-  //           ),
-  //           headerTitleAlign:'center',
-  //           headerShown:true,
-  //           headerTintColor: '#000000',
-  //           headerStyle:{
-  //            elevation:25
-
-  //           }
-
-  //         }} />
-  //          <Tab.Screen
-  //         name="Bills"
-  //         component={Bills}
-  //         options={{
-  //           tabBarLabel: 'Bills',
-  //           tabBarIcon: ({ color, size }) => (
-  //             <MaterialCommunityIcons
-  //               name="wallet-outline"
-  //               color={color}
-  //               size={size}
-  //             />
-  //           ),
-
-  //         }} />
-  //         <Tab.Screen
-  //         name="Profile"
-  //         component={Profile}
-  //         options={{
-  //           tabBarLabel: 'Profile',
-  //           tabBarIcon: ({ color, size }) => (
-  //           //   <MaterialCommunityIcons
-  //           //   name="wallet-outline"
-  //           //   color={color}
-  //           //   size={size}
-  //           // />
-  //           <AccountIcon pathProps={{ fill:color}}/>
-  //           )
-  //           ,
-  //           headerLeft: ()=> (
-  //             <View style={{marginRight: 10}}>
-  //               <Ionicons name='arrow-back' color={'#6E7191'} size={22}/>
-
-  //             </View>
-  //           ),
-  //           headerTitleAlign:'center',
-  //           headerShown:true,
-  //           headerTintColor: '#000000',
-  //           headerStyle:{
-  //            elevation:25
-
-  //           }
-
-  //         }} />
-  //     </Tab.Navigator>
-  //   </NavigationContainer>
+ 
   // )
 
   return (
@@ -158,17 +56,17 @@ const HomeBottomNavigation: React.FC<BottomTabNavigatorProps> = ({
           let ccountIcon = focused ? (
             <AccountIcon GProps={{fill: '#ff666e'}} />
           ) : (
-            <AccountIcon GProps={{fill: "#A6A6A6"}} />
+            <AccountIcon GProps={{fill: '#A6A6A6'}} />
           );
           let eartBottomIcon = focused ? (
-            <HeartBottomIcon pathProps={{fill: '#ff666e'}} />
+            <HeartBottomIcon GProps={{fill: '#ff666e'}} />
           ) : (
             <HeartBottomIcon />
           );
           let tomHouseIcon = focused ? (
             <BtomHouseIcon PathProps={{fill: '#ff666e'}} />
           ) : (
-            <BtomHouseIcon PathProps={{fill: "#A6A6A6"}} />
+            <BtomHouseIcon PathProps={{fill: '#A6A6A6'}} />
           );
 
           if (route.name === 'Home') {

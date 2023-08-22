@@ -12,6 +12,8 @@ import React from 'react';
 // import HomeMainStack from './src/shared/navigations/MainStack';
 import MainStack from './src/shared/navigations/MainStackNav';
 import { NativeBaseProvider } from 'native-base';
+import { Provider } from 'react-redux';
+import { store } from './src/shared/redux/store';
 // import {
 //   SafeAreaView,
 //   ScrollView,
@@ -33,9 +35,12 @@ import { NativeBaseProvider } from 'native-base';
 const App = () => {
   return( 
     <NativeBaseProvider>
+      <Provider store={store}>
+      <MainStack />
+      </Provider>
 
 
-<MainStack />
+
     </NativeBaseProvider>
   
   );
